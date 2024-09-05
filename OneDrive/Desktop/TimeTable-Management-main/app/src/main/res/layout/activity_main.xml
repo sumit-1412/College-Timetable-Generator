@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".MainActivity">
+
+    <!-- Maroon Top Bar -->
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#800000">
+
+        <TextView
+            android:id="@+id/topBarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TimeTable+"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/topBar"
+        android:layout_marginTop="20dp"
+
+        android:background="@drawable/circular_logo_background"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_to_timetable_management"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#404045"
+        android:layout_below="@id/logoImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcomeTextView"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/button_background"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_centerInParent="true"
+        android:text="@string/login"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/infoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginButton"
+        android:layout_marginTop="47dp"
+        android:background="@drawable/button_background_info"
+        android:paddingLeft="20dp"
+        android:layout_centerInParent="true"
+        android:paddingRight="20dp"
+        android:text="Info"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/contactButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/infoButton"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/button_background_contact"
+        android:paddingLeft="20dp"
+        android:layout_centerInParent="true"
+        android:paddingRight="20dp"
+        android:text="Contact Us"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/aboutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contactButton"
+        android:layout_marginTop="49dp"
+        android:background="@drawable/button_background_about"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_centerInParent="true"
+        android:text="About"
+        android:textColor="#000000" />
+</RelativeLayout>

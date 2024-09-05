@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+    <!-- Maroon Top Bar -->
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#800000">
+
+        <TextView
+            android:id="@+id/topBarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TimeTable+"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/topBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logo" />
+
+
+
+    <EditText
+        android:id="@+id/facultyIdEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logoImageView"
+        android:hint="Faculty ID"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/facultyNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Faculty Name"
+        android:layout_below="@id/facultyIdEditText"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/facultyDeptEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Faculty Dept"
+        android:layout_below="@id/facultyNameEditText"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/phoneNoEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone No."
+        android:layout_below="@id/facultyDeptEditText"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/emailIdEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email ID"
+        android:layout_below="@id/phoneNoEditText"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/qualificationEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Qualification"
+        android:layout_below="@id/emailIdEditText"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/submitFacultyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_below="@id/qualificationEditText" />
+
+</RelativeLayout>

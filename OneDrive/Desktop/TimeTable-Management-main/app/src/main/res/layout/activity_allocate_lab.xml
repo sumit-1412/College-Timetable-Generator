@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#800000">
+
+        <TextView
+            android:id="@+id/topBarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/timetable"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/topBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logo" />
+
+    <Spinner
+        android:id="@+id/facultySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoImageView"
+        android:layout_marginBottom="16dp"
+        android:hint="Select Faculty" />
+
+    <Spinner
+        android:id="@+id/labSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/facultySpinner"
+        android:layout_marginBottom="16dp"
+        android:hint="Select Lab" />
+
+    <Button
+        android:id="@+id/allocateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Allocate"
+        android:layout_below="@id/labSpinner" />
+</RelativeLayout>

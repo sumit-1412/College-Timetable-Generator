@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Maroon Top Bar -->
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#800000">
+
+        <TextView
+            android:id="@+id/topBarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TimeTable+"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/topBar"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnViewFaculties"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:padding="10dp"
+            android:text="View Faculties" />
+
+        <Button
+            android:id="@+id/btnViewSubjects"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:text="View Subjects" />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topBar"
+        android:layout_marginTop="104dp"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/logoImageView"
+                android:layout_width="match_parent"
+                android:layout_height="326dp"
+                android:layout_marginTop="42dp"
+                android:src="@drawable/logo" />
+
+            <Button
+                android:id="@+id/btnAddFaculty"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/logoImageView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                android:text="Add Faculty" />
+
+            <Button
+                android:id="@+id/btnAddSubjectDetails"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnAddFaculty"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="8dp"
+                android:text="Add Subject Details" />
+
+            <Button
+                android:id="@+id/btnAddLabDetails"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnAddSubjectDetails"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="8dp"
+                android:text="Add Lab Details" />
+
+
+            <Button
+                android:id="@+id/btnAllocateSubject"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnAddLabDetails"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="8dp"
+                android:text="Allocate Subject" />
+
+            <Button
+                android:id="@+id/btnAllocateLabs"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnAllocateSubject"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="8dp"
+                android:text="Allocate Labs" />
+
+            <Button
+                android:id="@+id/btnGenerateTimetable"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnAllocateLabs"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="8dp"
+                android:text="Generate Timetable" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

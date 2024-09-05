@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/background_gradient">
+
+
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#800000">
+
+        <TextView
+            android:id="@+id/topBarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/timetable"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="150dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/circular_logo_background"
+        android:src="@drawable/logo" />
+
+    <ScrollView
+        android:layout_width="395dp"
+        android:layout_height="550dp"
+        android:layout_below="@id/logoImageView"
+        android:layout_marginTop="-101dp">
+
+
+        <TextView
+            android:id="@+id/contact_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logoImageView"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:textSize="16sp" />
+    </ScrollView>
+</RelativeLayout>

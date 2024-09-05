@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TimeTable Management</string>
+    <string name="welcome_to_timetable_management">Welcome to Timetable Management</string>
+    <string name="username_email">Username/Email</string>
+    <string name="password">Password</string>
+    <string name="submit">Submit</string>
+    <string name="timetable">TimeTable+</string>
+    <string name="login">Login</string>
+    <string name="subject_code">Subject Code</string>
+    <string name="subject_name">Subject Name</string>
+    <string name="generate_timetable">Generate Timetable</string>
+</resources>
